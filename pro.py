@@ -29,7 +29,6 @@ print(missing_values)
 car_data['Selling_Price'] = car_data['Selling_Price'].fillna(np.mean(car_data['Selling_Price']))
 print("\nMissing values in 'Selling_Price' have been filled with the mean.")
 
-#  Let’s visualize some aspects of the data
 
 # Plot the distribution of fuel types in the dataset
 plt.figure(figsize=(8, 5))
@@ -50,7 +49,7 @@ car_data['Normalized_Selling_Price'] = normalized_price
 
 # Convert categorical data into numeric format using one-hot encoding
 car_data_encoded = pd.get_dummies(car_data, drop_first=True)
-print("\nHere’s the data after encoding categorical variables:")
+print("\nHere's the data after encoding categorical variables:")
 print(car_data_encoded.head())
 
 # Save the cleaned and encoded data to a new CSV file
