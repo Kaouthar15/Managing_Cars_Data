@@ -1,3 +1,4 @@
+#predicción del precio de un coche de segunda mano utilizando la regresión lineal 
 # Importer les bibliothèques nécessaires
 import pandas as pd
 from sklearn.linear_model import LinearRegression
